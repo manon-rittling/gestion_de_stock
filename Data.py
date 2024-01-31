@@ -1,14 +1,15 @@
-import _mysql_connector
+import mysql.connector
 
 class Data:
-    def__init__(self, host, user, password, database):
+
+    def __init__(self, host, user, password, database):
         self.host = host
         self.user = user
         self.password = password
         self.database = database
 
     def connexion(self):
-        self.db = _mysql_connector.connect(
+        self.db = mysql.connector.connect(
             host=self.host, 
             user=self.user, 
             password=self.password, 
