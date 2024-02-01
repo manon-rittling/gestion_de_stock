@@ -1,4 +1,4 @@
-import Data 
+from Data import Data
 
 class Produits:
     def __init__(self):
@@ -12,7 +12,7 @@ class Produits:
 
     def read(self):
         requete = f"SELECT * FROM {self.table}"
-        return self.db.fetch(requete)
+        print (self.db.fetch(requete))
     
     def update(self, id, nom, description, prix, quantite, id_categorie):
         requete = f"UPDATE {self.table} SET nom=%s, description=%s, prix=%s, quantite=%s, id_categorie=%s WHERE id=%s"
@@ -24,6 +24,12 @@ class Produits:
         params = (id,)
         self.db.executeRequete(requete, params)
 
+
+if __name__ == "__main__":
         
+    produit1 = Produits()
+    # produit1.create("roquefort", "200g provenance de roquefort bio", 12, 15, 3)
+    # produit1.update(10, "roquefort", "200g provenance de roquefort bio", 15, 12, 3)
+    produit1.read()
 
     

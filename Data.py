@@ -32,3 +32,8 @@ class Data:
         result = self.cursor.fetchall()
         self.deconnexion()
         return result
+    
+
+
+
+    
