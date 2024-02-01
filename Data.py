@@ -20,7 +20,7 @@ class Data:
     def deconnexion(self):
         self.db.close()
 
-    def execute(self, requete, params=None):
+    def executeRequete(self, requete, params=None):
         self.connexion()
         self.cursor.execute(requete, params or ())
         self.db.commit()
