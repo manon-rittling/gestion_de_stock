@@ -31,7 +31,7 @@ class Data:
         self.cursor.execute(requete, params or ())
         result = self.cursor.fetchall()
         self.deconnexion()
-        return result
+        return result 
     
 
 

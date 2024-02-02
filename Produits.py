@@ -12,7 +12,7 @@ class Produits:
 
     def read(self):
         requete = f"SELECT * FROM {self.table}"
-        print (self.db.fetch(requete))
+        return self.db.fetch(requete)
     
     def update(self, id, nom, description, prix, quantite, id_categorie):
         requete = f"UPDATE {self.table} SET nom=%s, description=%s, prix=%s, quantite=%s, id_categorie=%s WHERE id=%s"
