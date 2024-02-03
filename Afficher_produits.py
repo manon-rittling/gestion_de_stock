@@ -70,8 +70,21 @@ class Afficher_produits:
 
         pygame.display.update()
 
-    def ajouterProduit(self):
-        self
+    def createProduit(self):
+        pygame.display.set_caption("Ajouter un produit")
+        self.fenetre = pygame.display.set_mode((400, 300))
+        self.fenetre.fill((255, 255, 255))
+
+        input_rects = {
+            'Nom': pygame.Rect(50, 50, 200, 30),
+            'Description': pygame.Rect(50, 100, 200, 30),
+            'Prix': pygame.Rect(50, 150, 200, 30),
+            'Quantité': pygame.Rect(50, 200, 200, 30),
+            'ID Catégorie': pygame.Rect(50, 250, 200, 30)
+        }
+
+
+        
 
     def gererEvenements(self):
         for event in pygame.event.get():
@@ -86,7 +99,7 @@ class Afficher_produits:
                 if event.button == 1:
                     if self.ajouter_produit_rect.collidepoint(event.pos):
                         print("ajouter produit")
-                        # Ajoutez le code pour ajouter un produit ici
+                        self.createProduit()
                     elif self.modifier_produit_rect.collidepoint(event.pos):
                         print("modifier produit")
                         # Ajoutez le code pour modifier un produit ici
