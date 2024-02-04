@@ -12,6 +12,7 @@ class Produits:
 
     def read(self):
         requete = f"SELECT * FROM {self.table}"
+    
         return self.db.fetch(requete)
     
     def update(self, id, nom, description, prix, quantite, id_categorie):
@@ -23,6 +24,7 @@ class Produits:
         requete = f"DELETE FROM {self.table} WHERE id=%s"
         params = (id,)
         self.db.executeRequete(requete, params)
+        
 
 
 if __name__ == "__main__":

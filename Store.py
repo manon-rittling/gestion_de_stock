@@ -31,6 +31,7 @@ class Store:
 
     def updateProduit(self, id, nom, description, prix, quantite, id_categories):
         self.produit.update(id, nom, description, prix, quantite, id_categories)
+        return self.produit.read()
 
     def deleteProduit(self, id):
         self.produit.delete(id)
