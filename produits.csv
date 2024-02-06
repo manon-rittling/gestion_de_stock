@@ -1,0 +1,17 @@
+id,Nom,Description,Prix,Quantité,Id Catégorie
+1,fraises,barquette de 500g,5,10,1
+2,pommes, pommes golden a la piece,1,50,1
+3,mangues, mangue du costa rica,3,80,1
+4,courgettes,courgette de provence bio,2,80,2
+5,aubergines,aubergines de pertuis bio,3,70,2
+6,carottes,sachet de 1kg,4,20,2
+7,laits, lait demi écremé 1l,1,30,3
+8,comte,comte bloc 500g,14,25,3
+9,gruyere,gruyere rapé 200g,2,55,3
+10,roquefort,200g provenance de roquefort bio,15,12,3
+11,comte,comte 12 mois ,4,15,3
+12,camembert,camembert bio,3,15,3
+13,camembert,camembert bio,3,8,3
+15,camembert,camembert bio,3,7,3
+17,fromage raclette,fromage a raclette ,5,10,3
+18,bananes,les 4 from panama,1,36,1

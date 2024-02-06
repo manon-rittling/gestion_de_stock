@@ -12,6 +12,7 @@ class Categories:
 
     def joinId(self):
         requete = f"SELECT {self.table}.id, {self.table}.nom AS categorie_nom, produits.* FROM {self.table} INNER JOIN produits ON {self.table}.id = produits.id_categorie WHERE {self.table}.id = produits.id_categorie"
+        
         return(self.db.fetch(requete))
 
 
